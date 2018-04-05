@@ -27,6 +27,12 @@ public class PersonApp {
             persons.add(newPerson);
             System.out.println(newPerson);
 
+
+            System.out.println("Do you want continue?(Y/N)");
+            again = scan.nextLine();
+            if (again.equalsIgnoreCase("y")) {
+                done = true;
+            }else{done =false;}
         } while (done);
 
         System.out.println("------------------------");
