@@ -12,28 +12,30 @@ public class PersonApp {
         Person newPerson = new Person();
         boolean done = false;
         String again = "";
-        do {
-           newPerson = new Person();
-            System.out.println("Enter Person Name");
-            newPerson.setFirstName(scan.nextLine());
-            System.out.println("Enter Person  Last Name");
-            newPerson.setLastName(scan.nextLine());
-            System.out.println("Enter Person address");
-            newPerson.setAddress(scan.nextLine());
-            System.out.println("Enter Phone Number");
-            newPerson.setPhoneNumber(scan.nextLine());
-            System.out.println("Enter Person Email");
-            newPerson.setEmail(scan.nextLine());
-            persons.add(newPerson);
-            System.out.println(newPerson);
+       // do {
+         for (int i=1; i<=5; i++) {
+             newPerson = new Person();
+             System.out.println("Enter Person Name");
+             newPerson.setFirstName(scan.nextLine());
+             System.out.println("Enter Person  Last Name");
+             newPerson.setLastName(scan.nextLine());
+             System.out.println("Enter Person address");
+             newPerson.setAddress(scan.nextLine());
+             System.out.println("Enter Phone Number");
+             newPerson.setPhoneNumber(scan.nextLine());
+             System.out.println("Enter Person Email");
+             newPerson.setEmail(scan.nextLine());
+             persons.add(newPerson);
+             //System.out.println(newPerson);
+         }
 
-
-            System.out.println("Do you want continue?(Y/N)");
+         /*   System.out.println("Do you want continue?(Y/N)");
             again = scan.nextLine();
             if (again.equalsIgnoreCase("y")) {
                 done = true;
             }else{done =false;}
         } while (done);
+        */
 
         System.out.println("------------------------");
         for (Person eachPerson : persons) {
